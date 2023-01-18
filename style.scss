@@ -29,6 +29,11 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
+
+    /* media queries */
+    @media (max-width: 1200px) {
+        font-size: 55%;
+    }
     body {
         .header-1,
         .header-2,
@@ -38,6 +43,11 @@ html {
             justify-content: space-between;
             padding: 2rem 9%;
             background: var(--green);
+
+            /* media queries */
+            @media (max-width: 991px) {
+                padding: 2rem;
+            }
         }
 
         .header-1 {
@@ -104,6 +114,21 @@ html {
             box-shadow: 0 0.5rem 1rem var(--shadow-dark);
             position: relative;
             z-index: 999;
+
+            #menu-bar {
+                font-size: 3rem;
+                color: var(--gray);
+                border: 0.1rem solid var(--gray);
+                border-radius: 0.5rem;
+                padding: 0.5rem 1.5rem;
+                cursor: pointer;
+                display: none;
+
+                /* media queries */
+                @media (max-width: 768px) {
+                    display: inline;
+                }
+            }
 
             .navbar {
                 a {
